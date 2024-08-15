@@ -14,7 +14,7 @@
 
   .about-container {
     height: auto; /* Adjust height to fit content */
-    width: max-content;
+    width: 100%;
     align-items: center;
     margin-right: 5%;
   }
@@ -29,7 +29,7 @@
   }
 
   .about-description {
-    max-width: 80vh;
+    width: 100%;
   }
   .about-left-content,
   .about-right-content {
@@ -37,8 +37,7 @@
   }
 
   .about-bottom {
-    margin-top: -5vh;
-    margin-bottom: 13vh;
+    margin-top: -8vh;
   }
 
   .about-bottom h2 {
@@ -46,11 +45,15 @@
   }
 
   /* Experience */
+  .experience-section {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+  }
+
   .experience-center {
     flex-direction: column;
-    margin-top: 0;
-    margin-left: 0; /* Reset margin */
-    margin-right: 0;
+    margin: 0;
   }
   .experience-image {
     margin-left: 0;
@@ -68,11 +71,6 @@
     justify-content: center;
   }
 
-  .experience-title {
-    font-size: 1.7rem;
-    position: relative;
-  }
-
   .experience-image,
   .experience-image-left {
     width: fit-content;
@@ -85,11 +83,9 @@
   }
 
   .experience-description {
+    width: 100%;
     text-align: left;
-  }
-
-  .experience-bottom {
-    margin-top: -8rem;
+    font-size: 2vh;
   }
 
   .experience-bottom-text {
@@ -120,15 +116,9 @@
 
   /* Blog */
   .blog-card {
-    transform: scale(0.85);
+    width: 40vh;
   }
 
-  .blog-center {
-    width: 100%;
-    align-items: center;
-    gap: 0;
-    padding: 0;
-  }
   .blog-bottom-text {
     font-size: 10vh;
   }
