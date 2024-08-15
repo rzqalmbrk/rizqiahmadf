@@ -1,11 +1,20 @@
 /* Mobile */
-@media (max-width: 576px) {
+@media (max-width: 426px) {
   body {
     margin-left: 7vw;
     margin-right: 5vw;
   }
 
   /* Navbar */
+  .logo-img {
+    width: 4vh;
+    height: auto;
+  }
+
+  .company-name {
+    font-size: 1.5vh;
+  }
+
   .navbar {
     flex-wrap: wrap;
     width: 85%;
@@ -13,7 +22,7 @@
 
   .nav-links {
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 0;
     right: 0;
     background-color: var(--background_color);
@@ -93,21 +102,14 @@
   }
 
   .about-bottom {
-    margin-bottom: 13vh;
-    max-height: fit-content;
+    padding-top: 4vh;
   }
 
   .about-bottom h2 {
-    font-size: 8vh;
-  }
-
-  .about-divider {
-    margin-top: auto;
-    margin-bottom: auto;
+    font-size: 5vh;
   }
 
   /* Experience */
-
   .experience-top h2 {
     font-size: 3vh;
   }
@@ -127,7 +129,6 @@
   .experience-frame-left {
     flex-direction: column;
     align-items: center;
-    margin-right: 1rem;
     text-align: center;
   }
 
@@ -142,7 +143,8 @@
   }
 
   .experience-date {
-    font-size: 1vh;
+    margin-top: -2vh;
+    font-size: 1.5vh;
   }
 
   .experience-description {
@@ -168,7 +170,12 @@
   }
 
   .experience-bottom-text {
-    font-size: 8vh;
+    font-size: 5vh;
+  }
+
+  .experience-divider {
+    height: 0.1rem;
+    top: auto;
   }
 
   /* Remove animations for tablet view */
@@ -181,6 +188,10 @@
   }
 
   /* Hobby */
+  .hobby-top {
+    margin-bottom: 0.5rem;
+  }
+
   .hobby-header {
     font-size: 3vh;
   }
@@ -195,34 +206,72 @@
 
   .image-item {
     width: 40%;
+    z-index: 2;
   }
 
   .image-item:hover {
     transform: scale(1);
   }
 
+  .image-keyword {
+    font-size: 1.5vh;
+  }
+
+  .image-title {
+    font-size: 1.5vh;
+  }
+
   .hobby-bottom-text {
-    font-size: 8vh;
+    z-index: -9;
+    font-size: 5vh;
+  }
+
+  .hobby-divider {
+    height: 0.1rem;
+    top: auto;
   }
 
   /* Blog */
   .blog-header {
     font-size: 3vh;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 
   .blog-center {
-    display: ruby;
-    align-items: center;
-    gap: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
     padding: 0;
+    padding-left: 1vw;
   }
+
   .blog-card {
-    width: 20rem;
+    width: 24vh;
+  }
+
+  .blog-details {
+    padding: 1rem;
+  }
+
+  .blog-date {
+    font-size: 1vh;
+  }
+
+  .blog-title {
+    font-size: 2vh;
+    margin-bottom: 1vh;
+  }
+
+  .blog-link {
+    font-size: 1.5vh;
+  }
+
+  .blog-bottom {
+    margin-top: -3rem;
   }
 
   .blog-bottom-text {
-    font-size: 8vh;
+    font-size: 5vh;
   }
 
   /* Contact */
@@ -230,7 +279,12 @@
     font-size: 3vh;
   }
 
+  .contact-line {
+    height: 0.1rem;
+  }
+
   .contact-center {
+    margin-top: 1rem;
     margin-bottom: -8rem;
   }
   .top-frame {
@@ -253,7 +307,8 @@
   }
 
   .contact-bot-text {
-    font-size: 8vh;
+    padding-top: 8vh;
+    font-size: 5vh;
   }
 
   .social-media-icons {
