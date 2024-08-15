@@ -1,0 +1,139 @@
+/* Tablets */
+@media (max-width: 768px) {
+  body {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  /* Navbar */
+  .navbar {
+    width: calc(100% - 10vw); /* Full width minus padding */
+  }
+
+  /* About */
+
+  .about-container {
+    height: auto; /* Adjust height to fit content */
+    width: 100%;
+    align-items: center;
+    margin-right: 5%;
+  }
+
+  .about-left,
+  .about-center,
+  .about-right,
+  .about-bottom {
+    position: static; /* Remove absolute positioning */
+    width: 100%;
+    text-align: center; /* Center text content */
+  }
+
+  .about-description {
+    width: 100%;
+  }
+  .about-left-content,
+  .about-right-content {
+    text-align: center; /* Center text content */
+  }
+
+  .about-bottom {
+    margin-top: -8vh;
+  }
+
+  .about-bottom h2 {
+    font-size: 10vh;
+  }
+
+  /* Experience */
+  .experience-section {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .experience-center {
+    flex-direction: column;
+    margin: 0;
+  }
+  .experience-image {
+    margin-left: 0;
+  }
+
+  .experience-frame,
+  .experience-frame-left {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+  }
+
+  .experience-details {
+    width: 100%;
+    margin-top: 0; /* Reset margin */
+    justify-content: center;
+  }
+
+  .experience-image,
+  .experience-image-left {
+    width: fit-content;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .experience-frame-left {
+    margin-top: 0;
+    margin-right: 0; /* Reset margin */
+  }
+
+  .experience-description {
+    width: 100%;
+    text-align: left;
+    font-size: 2vh;
+  }
+
+  .experience-bottom-text {
+    font-size: 10vh;
+  }
+
+  /* Remove animations for tablet view */
+  .experience-frame-1,
+  .experience-frame-2,
+  .experience-top,
+  .experience-bottom {
+    transition: none;
+    transform: none;
+  }
+
+  /* Hobby */
+  .filter {
+    font-size: 2vh;
+  }
+
+  .image-item {
+    max-width: 50%;
+  }
+
+  .hobby-bottom-text {
+    font-size: 10vh;
+  }
+
+  /* Blog */
+  .blog-card {
+    width: 40vh;
+  }
+
+  .blog-bottom-text {
+    font-size: 10vh;
+  }
+
+  /* Contact */
+
+  .contact-item {
+    scale: 0.8;
+  }
+  .contact-bot {
+    margin-top: 5vh;
+  }
+
+  .contact-bot-text {
+    font-size: 10vh;
+  }
+}
