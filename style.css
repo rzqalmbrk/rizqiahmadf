@@ -99,7 +99,7 @@ header {
 }
 
 .menu-toggle .bar {
-  width: 4vw;
+  width: 5vw;
   height: 0.3vh;
   background-color: var(--text_color);
   margin: 0.4vh 0;
@@ -213,7 +213,7 @@ header {
 
 .about-right {
   width: 35%;
-  top: 15vh; /* Example position, adjust as needed */
+  top: 20vh; /* Example position, adjust as needed */
   right: 0;
   z-index: 3; /* Adjust z-index to bring this component in front or back */
 }
@@ -232,7 +232,7 @@ header {
 }
 
 .about-description {
-  line-height: 2.5vh;
+  line-height: 2.7vh;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 2vh;
@@ -272,7 +272,7 @@ header {
   /* Allow customization for top-left-right-bottom position */
   /* Adjust these properties to position the top section */
   position: relative;
-  top: 0px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -296,7 +296,6 @@ header {
   position: relative;
   margin-top: 3rem;
   margin-left: 10vw;
-  margin-right: -10vw;
   padding: 0;
 }
 
@@ -317,20 +316,20 @@ header {
 }
 
 .experience-details {
-  width: 40.5rem; /* 495px */
+  width: 40vw; /* 495px */
   margin-top: -3rem; /* -50px */
 }
 
 .experience-title {
   font-family: 'Nunito', sans-serif;
-  font-size: 2rem; /* 25px */
+  font-size: 3.5vh; /* 25px */
   font-weight: 600;
   color: var(--white_color);
 }
 
 .experience-date {
   font-family: 'Lato', sans-serif;
-  font-size: 1.2rem; /* 14px */
+  font-size: 1.9vh; /* 14px */
   color: var(--white_color);
   opacity: 0.5;
   margin-top: -1.25rem; /* -20px */
@@ -348,7 +347,7 @@ header {
 .experience-frame-left {
   flex-direction: row; /* Set to row to place image on the left */
   margin-top: 1.25rem; /* 20px */
-  margin-right: 45rem; /* 47em */
+  margin-right: 15vw; /* 47em */
 }
 
 .experience-image-left {
@@ -510,13 +509,14 @@ header {
 .image-item:hover {
   transform: scale(1.2);
   filter: grayscale(0%);
-  z-index: 1;
+  z-index: 2;
 }
 
 .image-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 1;
 }
 
 .image-caption {
@@ -527,7 +527,6 @@ header {
   background: rgba(0, 0, 0, 0.5);
   color: var(--white_color);
   text-align: center;
-  padding: 0.625rem; /* 10px */
   display: none;
 }
 
@@ -537,13 +536,13 @@ header {
 
 .image-keyword {
   font-family: 'Lato', sans-serif;
-  font-size: 1rem; /* 16px */
+  font-size: 1.8vh; /* 16px */
   color: var(--text_color);
 }
 
 .image-title {
   font-family: 'Nunito', sans-serif;
-  font-size: 1.5625rem; /* 25px */
+  font-size: 2vh; /* 25px */
   font-weight: 500;
   flex-wrap: wrap;
 }
@@ -551,7 +550,7 @@ header {
 .hobby-bottom {
   text-align: center;
   margin-top: -1.25rem; /* -20px */
-  z-index: 0;
+  z-index: -2;
   margin-bottom: auto;
 }
 
@@ -574,11 +573,13 @@ header {
 
 /* Blog Section */
 .blog-section {
+  width: 100%;
   padding: 0 0;
   color: var(--text_color);
 }
 
 .blog-top {
+  width: 100%;
   text-align: center;
 }
 
@@ -593,15 +594,17 @@ header {
 }
 
 .blog-center {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); /* minmax(350px, 1fr) */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
   gap: 2rem; /* 35px */
-  padding: 0 2rem; /* 20px */
+  padding: 0 3.5rem; /* 20px */
 }
 
 .blog-card {
   position: relative;
-  width: 30rem; /* 350px */
+  width: 45vh; /* 350px */
   border-radius: 0.625rem; /* 10px */
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 0 4px 8px */
   background-color: transparent;
@@ -619,6 +622,7 @@ header {
 .blog-details {
   background-color: #02002c;
   padding: 2.5rem; /* 20px */
+  padding-top: 2vh;
   border-radius: 0 0 0.625rem 0.625rem; /* 0 0 10px 10px */
   width: 100%;
   box-sizing: border-box;
@@ -628,26 +632,26 @@ header {
 
 .blog-date {
   font-family: 'Lato', sans-serif;
-  font-size: 1rem; /* 14px */
+  font-size: 1.5vh; /* 14px */
   color: var(--white_color);
   opacity: 0.5;
-  margin-top: auto;
+  margin-top: 0;
   margin-bottom: 0.625rem; /* 10px */
 }
 
 .blog-title {
   font-family: 'Nunito', sans-serif;
   font-weight: medium;
-  font-size: 3vh; /* 25px */
+  font-size: 2.5vh; /* 25px */
   color: var(--white_color);
   margin-top: auto;
-  margin-bottom: 2rem; /* 10px */
+  margin-bottom: 1rem; /* 10px */
 }
 
 .blog-link {
   font-family: 'Lato', sans-serif;
   font-weight: medium;
-  font-size: 1.3rem; /* 14px */
+  font-size: 2vh; /* 14px */
   color: #0000ff;
   text-decoration: none;
 }
@@ -744,7 +748,7 @@ header {
 
 .contact-text {
   font-family: 'Lato', sans-serif;
-  font-size: 2.5vh;
+  font-size: 2vh;
   color: var(--white_color);
   text-decoration: none;
 }
@@ -802,5 +806,3 @@ header {
   position: relative;
   left: auto; /* 150px */ /* Adjust to match the web margin */
 }
-
-/* Responsive Styles */
