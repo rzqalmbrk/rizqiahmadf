@@ -250,6 +250,10 @@
     width: 40vw;
   }
 
+  .blog-image {
+    max-height: 10vh;
+  }
+
   .blog-details {
     padding: 0.7rem;
     padding-top: 0.2rem;
