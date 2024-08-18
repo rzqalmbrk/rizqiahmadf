@@ -249,6 +249,10 @@
     width: 39vw;
   }
 
+  .blog-image {
+    max-height: 15vh;
+  }
+
   .blog-details {
     padding: 1rem;
   }
